@@ -1,5 +1,6 @@
 # Computes factorial of the input number and returns it
 
+# SOLUTION 1
 # The solution below has a time complexity of O(n) because it has one loop
 # whose number of iteration depends on the size of the number.
 
@@ -18,4 +19,15 @@ def factorial(number)
   end
 
   return number
+end
+
+# SOLUTION 2
+# An improved solution would be to use recursion, because it retains the O(n)
+# time complexity. It still has O(1) space complexity, but uses no additional
+# variables beyond the original number.
+
+def factorial(number)
+  raise ArgumentError if number == nil
+  return 1 if number == 0
+  return number * factorial(number - 1)
 end
