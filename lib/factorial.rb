@@ -12,16 +12,11 @@ def factorial(number)
 
   product = 1
 
-  (number-1).times do |i| #<-- b/c of the subtraction below, we never want n - i = 0
-    i += 1 #<-- start with 1
-    smaller_num = number - i #<-- this way, we can follow the alg w/ n * (n-1)
-
-    if i == 1
-      product *= number * smaller_num
-    else
-      product *= smaller_num #<-- avoid repeats
-    end
+  while number > 1
+    product *= number
+    number -= 1
   end
+  
   return product
 end
 
