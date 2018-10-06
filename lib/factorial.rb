@@ -3,14 +3,14 @@ require 'pry'
 def factorial(number)
   raise ArgumentError if number.nil?
 
-  factorial = 1
+  product = 1
 
   while number > 0
-    factorial = factorial * number
+    product = product * number
     number = number - 1
   end
 
-  return factorial
+  return product
 end
 
 # Time complexity: linear
