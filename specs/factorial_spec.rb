@@ -15,15 +15,15 @@ describe "factorial" do
 
   # check for edge cases
   describe "edge cases" do
-    # if the parameter is an object, check for nil
+  #   # if the parameter is an object, check for nil
     it "nil object is not an integer" do
       proc {factorial(nil)}.must_raise ArgumentError
     end
-
+  #
     it "factorial(0) = 1" do
       factorial(0).must_equal 1
     end
-
+  #
     it "factorial(1) = 1" do
       factorial(1).must_equal 1
     end
