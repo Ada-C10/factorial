@@ -7,7 +7,7 @@ describe "factorial" do
     it "factorial(5) = 120" do
       factorial(5).must_equal 120
     end
-
+  
     it "factorial(7) = 5040" do
       factorial(7).must_equal 5040
     end
