@@ -1,4 +1,7 @@
 # Computes factorial of the input number and returns it
+# Time Complexity: O(n)
+# Space Complexity: O(n)
+
 def factorial(number)
     raise ArgumentError if number.nil?
 
