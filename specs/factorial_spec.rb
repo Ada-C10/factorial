@@ -9,6 +9,7 @@ describe "factorial" do
     end
 
     it "factorial(7) = 5040" do
+
       factorial(7).must_equal 5040
     end
   end
@@ -17,14 +18,17 @@ describe "factorial" do
   describe "edge cases" do
     # if the parameter is an object, check for nil
     it "nil object is not an integer" do
+      # skip
       proc {factorial(nil)}.must_raise ArgumentError
     end
 
     it "factorial(0) = 1" do
+
       factorial(0).must_equal 1
     end
 
     it "factorial(1) = 1" do
+      
       factorial(1).must_equal 1
     end
   end
