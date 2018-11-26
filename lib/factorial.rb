@@ -1,5 +1,5 @@
 # Computes factorial of the input number and returns it
-# Time complexity: O(number) becomes the loop will get executed 'number' number of times
+# Time complexity: O(number) because the loop will get executed 'number' number of times
 # Space complexity: O(1) - fact auxiliary variable used
 def factorial(number)
   raise ArgumentError.new("input cannot be nil") if number == nil
