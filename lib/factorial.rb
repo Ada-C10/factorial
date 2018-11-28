@@ -11,3 +11,6 @@ def factorial(number)
 
   return factorial
 end
+
+#Time complexity is linear : O(number) . The algorithm will run for at least number times
+#Space complexity is constant : O(1). The space the algorithm takes in memory is constant regardless of the size of imput
